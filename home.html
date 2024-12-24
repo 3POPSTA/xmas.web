@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+       
+        <link rel="stylesheet" href="slides.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!-- <link rel="stylesheet" href="swiper.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="general-asserts/navigation.css">
+        <link rel="stylesheet" href="general-asserts/footer.css" />
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="year.css">
+        <link rel="icon" href="christmas-logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="navi">
+        <nav class="navbar container">
+            <h2 class="logo">Xmas.<span style="color:#9c1d28;">web</span></h2>
+            <input type="checkbox" id="toggler" />
+            <label class="toggle" for="toggler"><i class="ri-menu-line" style="color:white; font-weight
+            :bold;"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="#" class="active"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="gift/gift.html"><i class="fas fa-gift"></i>Gifts</a></li>
+                    <li><a href="movie/movie.html"><i class="fas fa-video"></i>Movie</a></li>
+                    <li><a href="about/about.html"><i class="fas fa-address-card"></i>About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="snow-container"></div>
+
+    <div class="main-content">
+        <div class="site-intro">
+            <img src="home-imgs/intro.avif" width="100%" alt="intro-image">
+            <div class="intro-text">
+                <p>Peace, love, joy, Merry Christmas!</p>
+            </div>
+        </div>
+        <div class="first-section">
+            <section class="faq">
+                <header class="faq__header">
+                    <h2 class="faq__title">Things you didn't know about christmas</h2>
+                    <p class="faq__subtitle">
+                        Rare knowledge about christmas
+                    </p>
+                </header>
+                <hr class="faq__separator" />
+                <div class="faq__item">
+                    <button
+                        class="faq__question"
+                        aria-expanded="false"
+                        aria-controls="answer1"
+                    >
+                      Christmas Was Once Banned
+                        <i class="faq__icon ri-arrow-drop-right-line"></i>
+                    </button>
+                    <div class="faq__answer" id="answer1" aria-hidden="true">
+                        <div class="faq__answer-inner">
+                            <p class="faq__answer-text">
+                                During the 17th century, Puritans in England and colonial America banned Christmas celebrations, considering them unbiblical and overly indulgent. The ban in Boston lasted from 1659 to 1681, and anyone caught celebrating was fined!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button
+                        class="faq__question"
+                        aria-expanded="false"
+                        aria-controls="answer2"
+                    >
+                    Jingle Bells Was Originally a Thanksgiving Song
+                        <i class="faq__icon ri-arrow-drop-right-line"></i>
+                    </button>
+                    <div class="faq__answer" id="answer2" aria-hidden="true">
+                        <div class="faq__answer-inner">
+                            <p class="faq__answer-text">
+                                The famous Christmas tune "Jingle Bells" was composed by James Lord Pierpont in 1857, but it was intended for Thanksgiving. Over time, its cheerful melody and festive imagery made it a Christmas classic.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button
+                        class="faq__question"
+                        aria-expanded="false"
+                        aria-controls="answer3"
+                    >
+                    The Origin of Christmas Trees
+                        <i class="faq__icon ri-arrow-drop-right-line"></i>
+                    </button>
+                    <div class="faq__answer" id="answer3" aria-hidden="true">
+                        <div class="faq__answer-inner">
+                            <p class="faq__answer-text">
+                                The tradition of decorating Christmas trees originated in Germany in the 16th century. Devout Christians brought trees into their homes, and Martin Luther is credited with adding the first candles to a tree to mimic the twinkling stars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button
+                        class="faq__question"
+                        aria-expanded="false"
+                        aria-controls="answer4"
+                    >
+                    Santa's Red Suit Wasn't Always Red
+                        <i class="faq__icon ri-arrow-drop-right-line"></i>
+                    </button>
+                    <div class="faq__answer" id="answer4" aria-hidden="true">
+                        <div class="faq__answer-inner">
+                            <p class="faq__answer-text">
+                                Before Coca-Cola popularized the red-suited Santa in the 1930s, he was often depicted in various colors like blue, green, and brown. The modern image of Santa Claus as we know it today is largely due to Coca-Cola's advertising campaigns.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="quote-sec">
+                <img src="home-imgs/quote.avif" alt="quote" class="quote-img">
+                <p class="quote">
+                    Christmas is not just a season; it’s a feeling of love, joy, and togetherness that warms our hearts and lights up our world.
+                </p>
+            </div>
+        </div>
+        <div class="middle">
+            <h2>Christmas Vacation</h2>
+             <p> <span>38 locations</span> / current Ghana <i class="fas fa-map-marker-alt"></i></p>
+             <button>See Locations</button> 
+        </div>
+        <div class="third-section">
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="home-imgs/slide-1.avif" alt="slide-1">
+                                </div>
+                                <div class="slide-title">
+                                    <!-- <p class="text-head">Faculity Of Agriculture</p> -->
+                                    <p class="text-sub">
+                                        Christmas is the season to share love, spread joy, and cherish precious moments with family.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="home-imgs/slide-2.avif" alt="slide-1">
+                                </div>
+                                <div class="slide-title">
+                                    <!-- <p class="text-head">Faculity Of Agriculture</p> -->
+                                    <p class="text-sub">
+                                        The magic of Christmas lies in its ability to bring people together with love and warmth.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="home-imgs/slide-3.avif" alt="slide-1">
+                                </div>
+                                <div class="slide-title">
+                                    <!-- <p class="text-head">Faculity Of Agriculture</p> -->
+                                    <p class="text-sub">
+                                        Celebrate Christmas with a heart full of gratitude, kindness, and the spirit of giving to all.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="home-imgs/slide-4.avif" alt="slide-1">
+                                </div>
+                                <div class="slide-title">
+                                    <!-- <p class="text-head">Faculity Of Agriculture</p> -->
+                                    <p class="text-sub">
+                                        The joy of Christmas comes from creating memories, spreading love, and sharing happiness with others
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="slide">
+                                <div class="slide-img">
+                                    <img src="home-imgs/slide-5.avif" alt="slide-1">
+                                </div>
+                                <div class="slide-title">
+                                    <!-- <p class="text-head">Merry Christmas</p> -->
+                                    <p class="text-sub">
+                                        Christmas reminds us that the greatest gifts are love, togetherness, and the kindness we show.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+        
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="fourth-section">
+            <div class="img-content">
+                <img src="home-imgs/celebration.avif" alt="celebrating">
+                <div class="text-overflow">
+                    <p>Christmas celebration accross the world</p>
+                </div>
+            </div>
+            <div class="text-describtion">
+                <small>2024 Christmas inspiration</small>
+                <p>
+                    May the spirit of Christmas inspire you to spread kindness, embrace hope, and believe in the magic of new beginnings.
+                </p>
+            </div>
+            <div class="card">
+                <img src="home-imgs/card.avif" alt="card">
+                <div class="card-text">
+                    <p>
+                        Let the joy of Christmas fill your heart and inspire you to share its magic with the world around you. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="middle-2">
+            <div class="left-side">
+                <div class="btn">
+                    <button>Share <i class="fas fa-gifts"></i></button>
+                </div>
+                <p>
+                    Christmas is a time to share love, kindness, and joy.
+                </p>
+            </div>
+            <div class="right-side">
+                <h2>Christmas Presents</h2>
+            </div>
+        </div>
+        <div class="five-section">
+            <div class="main-img">
+                <img src="home-imgs/santa.avif" alt="santa">
+            </div>
+            <div class="presents-topics">
+                <div class="topic-card">
+                    <h2>The True Spirit of Christmas.</h2>
+                    <p>
+                        The true spirit of Christmas is about love, kindness, giving, and bringing joy to others.
+                    </p>
+                </div>
+                <div class="topic-card sec">
+                    <h2>Sharing the Magic of Christmas.</h2>
+                    <p>
+                        Sharing the magic of Christmas means spreading joy, kindness, and love with others throughout the season.
+                    </p>
+                </div>
+                <div class="topic-card">
+                    <h2>
+                        The Gift of Giving.
+                    </h2>
+                    <p>
+                        The gift of giving is about selflessly sharing love, time, and resources to brighten others' lives.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="middle-3">
+            <div class="small-text">
+                <p>
+                    Christmas is a time for love, joy, togetherness, giving, and celebrating the spirit of kindness.
+                </p>
+            </div>
+            <div class="about">
+                <h2>Merry Christmas</h2>
+            </div>
+        </div>
+        <div class="sixth-section">
+            <div class="large-img">
+                <img src="home-imgs/wishs.avif" alt="wishs">
+            </div>
+            <div class="ending-text">
+                <p class="creater">Wishes from : <span>Ac-Lumor Love</span></p>
+                <p class="wishes">
+                    May your Christmas be filled with love, laughter, and the warmth of cherished moments. Wishing you joy, peace, and endless blessings this holiday season!
+                </p>
+            </div>
+            <div class="dev-card">
+                <img src="home-imgs/dev.avif" alt="dev">
+                <div class="dev-name">
+                    <h2>Developer: Ac-Lumor Love</h2>
+                    <button><a href="about/about.html">About</a></button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div>
+                    <h6 class="footer__title">Prime <i class="fab fa-xing"></i>po</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Affiliates</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Apex Softwares</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Affiliates</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Paneil <i class="fas fa-eye"></i></h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Affiliates</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer__divider" />
+            <div class="footer__bottom">
+                <span class="copyright"
+                    >&copy; 2024 Company. All rights reserved.</span
+                >
+                <ul class="footer__list footer__list--bottom">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const faq = document.querySelector('.faq')
+faq.addEventListener('click', event => {
+	const question = event.target.closest('.faq__question')
+	if (!question) return
+	const answer = question.nextElementSibling
+	// hide previously opened answer and show the clicked answer
+	const currentAnswer = faq.querySelector('.faq__answer[aria-hidden="false"]')
+	if (currentAnswer === answer) {
+		// close the already open answer
+		answer.setAttribute('aria-hidden', 'true')
+		answer.parentNode.classList.remove('faq__item--expanded')
+		question.setAttribute('aria-expanded', 'false')
+	} else {
+		// hide previously open answer and show the clicked answer
+		if (currentAnswer) {
+			currentAnswer.setAttribute('aria-hidden', 'true')
+			currentAnswer.parentNode.classList.remove('faq__item--expanded')
+			currentAnswer.previousElementSibling.setAttribute(
+				'aria-expanded',
+				'false'
+			)
+		}
+		answer.setAttribute('aria-hidden', 'false')
+		answer.parentNode.classList.add('faq__item--expanded')
+		question.setAttribute('aria-expanded', 'true')
+	}
+})
+    </script>
+    <script>
+        new Swiper('.card-wrapper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    spaceBetween : 30,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+      dynamicBullets :true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+    breakpoints: {
+        0:{
+            slidesPerView : 1
+        },
+        750:{
+            slidesPerView : 2
+        },
+        1024:{
+            slidesPerView : 3
+        }
+
+    }
+  });
+    </script>
+
+    <script>
+const snowContainer = document.querySelector(".snow-container")
+// Snowflake creation function
+function createSnowflake() {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.innerHTML = '❄';
+    
+    // Randomize snowflake size and position
+    const size = Math.random() * 20 + 10 + 'px';
+    const leftPosition = Math.random() * window.innerWidth + 'px';
+    snowflake.style.fontSize = size;
+    snowflake.style.left = leftPosition;
+
+    // Randomize animation duration
+    const duration = Math.random() * 5 + 3 + 's';
+    snowflake.style.animationDuration = duration;
+
+    // Add snowflake to the snow container
+    snowContainer.appendChild(snowflake);
+
+    // Remove snowflake after animation ends
+    setTimeout(() => {
+        snowflake.remove();
+    }, parseFloat(duration) * 1000);
+}
+
+// Generate snowflakes at intervals
+setInterval(createSnowflake, 100);
+
+// Adjust for responsive resizing
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.snowflake').forEach(snowflake => {
+        const leftPosition = Math.random() * window.innerWidth + 'px';
+        snowflake.style.left = leftPosition;
+    });
+});
+    </script>
+   
+</body>
+</html>

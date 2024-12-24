@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="../general-asserts/navigation.css">
+    <link rel="stylesheet" href="../general-asserts/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="movie.css">
+    <link rel="icon" href="../christmas-logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="navi">
+        <nav class="navbar container">
+            <h2 class="logo">Xmas.<span style="color:#9c1d28;">web</span></h2>
+            <input type="checkbox" id="toggler" />
+            <label for="toggler"><i class="ri-menu-line" style="color:white; font-weight
+            :bold;"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="../home.html" ><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="../gift/gift.html"><i class="fas fa-gift"></i>Gifts</a></li>
+                    <li><a href="#" class="active"><i class="fas fa-video"></i>Movie</a></li>
+                    <li><a href="../about/about.html"><i class="fas fa-address-card"></i>About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <h2 style="font-size: 20px;">Xmas movies</h2>
+            <form id="form">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search and hit enter"
+                    class="search"
+                    autocomplete="off"
+                />
+            </form>
+        </header>
+    </div>
+    <div class="snow-container"></div>
+
+    <div class="basic-intro">
+        <p>
+            Get cozy and experience the magic of the season with the best Christmas movies of all time!
+             From heartwarming classics like Home Alone and It’s a Wonderful Life to new holiday hits,
+              we’ve got everything you need for a perfect festive movie night. <strong>Feel free to search for more movies.</strong>
+        </p>
+    </div>
+    
+    <main id="main"></main>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div>
+                    <h6 class="footer__title">Prime <i class="fab fa-xing"></i>po</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Affiliates</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Apex Softwares</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Affiliates</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Paneil <i class="fas fa-eye"></i></h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Affiliates</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer__divider" />
+            <div class="footer__bottom">
+                <span class="copyright"
+                    >&copy; 2024 Company. All rights reserved.</span
+                >
+                <ul class="footer__list footer__list--bottom">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="movie.js"></script>
+    <script>
+        const snowContainer = document.querySelector('.snow-container');
+
+        // Snowflake creation function
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = '❄';
+            
+            // Randomize snowflake size and position
+            const size = Math.random() * 20 + 10 + 'px';
+            const leftPosition = Math.random() * window.innerWidth + 'px';
+            snowflake.style.fontSize = size;
+            snowflake.style.left = leftPosition;
+
+            // Randomize animation duration
+            const duration = Math.random() * 5 + 3 + 's';
+            snowflake.style.animationDuration = duration;
+
+            // Add snowflake to the snow container
+            snowContainer.appendChild(snowflake);
+
+            // Remove snowflake after animation ends
+            setTimeout(() => {
+                snowflake.remove();
+            }, parseFloat(duration) * 1000);
+        }
+
+        // Generate snowflakes at intervals
+        setInterval(createSnowflake, 100);
+
+        // Adjust for responsive resizing
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('.snowflake').forEach(snowflake => {
+                const leftPosition = Math.random() * window.innerWidth + 'px';
+                snowflake.style.left = leftPosition;
+            });
+        });
+    </script>
+</body>
+</html>
