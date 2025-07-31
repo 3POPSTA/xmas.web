@@ -12,7 +12,7 @@ body {
     background: #E63946;
 }
 .container{
-    border: none;
+    border: 0;
 }
 header {
     /* background-color: #E63946; */
